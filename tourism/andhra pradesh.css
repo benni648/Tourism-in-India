@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightcyan;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box {
+    background: linear-gradient(135deg, aqua, #7bddfe); 
+    color: white;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 900px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.box p1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-top: 0;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-image {
+    transform: scale(1.1);
+}
+
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 0 0 12px 12px;
+    color: #333;
+}
+
+
+.card-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card-content p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+
+.card-content:hover h2 {
+    color: #ff7e5f;
+}
+
+
+.card:hover .card-content {
+    background-color: #fffbf0;
+    transition: background-color 0.3s ease;
+}
+
+
+.button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
